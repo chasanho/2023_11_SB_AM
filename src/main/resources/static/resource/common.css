@@ -10,9 +10,6 @@
 html > body {
 	font-family: 'NanumSquareNeo-Variable', sans-serif;
 	text-underline-position: under;
-	background-color: chocolate;
-	
-	
 }
 
 .table-box-type > table {
@@ -23,5 +20,13 @@ html > body {
 	border: 1px solid black;
 	padding: 10px;
 	text-align: center; 
-	background-color: greenyellow;
+}
+
+.btns > .btn-text-color {
+	color:black;
+}
+
+.btns > .btn-text-color:hover {
+	color:firebrick;
+	text-decoration: underline;
 }
