@@ -34,7 +34,7 @@
 					<table class="table table-lg">
 						<tr>
 							<th>아이디</th>
-							<td><input class="input input-bordered input-primary w-9/12" name="loginId" type="text" placeholder="아이디를 입력해주세요" /></td>
+							<td><input class="input input-bordered input-primary w-9/12" name="loginId" type="text" placeholder="아이디를 입력해주세요"/></td>
 						</tr>
 						<tr>
 							<th>비밀번호</th>
