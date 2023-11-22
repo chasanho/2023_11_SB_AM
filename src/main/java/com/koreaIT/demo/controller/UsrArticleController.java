@@ -13,6 +13,7 @@ import com.koreaIT.demo.service.BoardService;
 import com.koreaIT.demo.util.Util;
 import com.koreaIT.demo.vo.Article;
 import com.koreaIT.demo.vo.Board;
+import com.koreaIT.demo.vo.ResultData;
 import com.koreaIT.demo.vo.Rq;
 
 @Controller
@@ -89,6 +90,12 @@ public class UsrArticleController {
 	
 	@RequestMapping("/usr/article/detail")
 	public String detail(Model model, int id) {
+		
+		ResultData<Integer> increaseHitCountRd = articleService.increaseHitCount(id);
+		
+		if (increaseHitCountRd.isFail()) {
+			return rq.jsReturnOnView(increaseHitCountRd.getMsg());
+		}
 		
 		Article article = articleService.forPrintArticle(id);
 		

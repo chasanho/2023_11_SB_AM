@@ -23,6 +23,10 @@
 						<td>${article.updateDate.substring(2, 16) }</td>
 					</tr>
 					<tr>
+						<th>조회수</th>
+						<td>${article.hitCount }</td>
+					</tr>
+					<tr>
 						<th>작성자</th>
 						<td>${article.writerName }</td>
 					</tr>
