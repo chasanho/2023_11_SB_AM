@@ -29,4 +29,12 @@ public class MemberService {
 	public Member getMemberByLoginId(String loginId) {
 		return memberDao.getMemberByLoginId(loginId);
 	}
+
+	public void doModify(int id, String name, String nickname, String cellphoneNum, String email) {
+		memberDao.doModify(id, name, nickname, cellphoneNum, email);
+	}
+
+	public void doPasswordModify(int id, String loginPw) {
+		memberDao.doPasswordModify(id, loginPw);
+	}
 }
